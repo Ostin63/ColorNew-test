@@ -9,38 +9,42 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
+<body class="body">
 
   <header class="header">
-    <svg class="header__logo-svg" role="img" width="28" height="42" aria-label="Логотип компании БРИДЖ">
-      <use xlink:href="img/logo.svg#logo"></use>
-    </svg>
-    <picture>
-      <source media="(min-width: 768px)" srcset="img/logo.svg#logo-text">
-      <img class="header__logo-text" src="img/logo.svg#none-black" width="114" height="38"
-        alt="Текст логотипа компании БРИДЖ">
-    </picture>
-    <ul class="header__nav">
-      <li class="header__nav-item">
-        <a href="" class="header__nav-item-link">Инвестиции</a>
-      </li>
-      <li class="header__nav-item">
-        <a href="" class="header__nav-item-link">Займы</a>
-      </li>
-      <li class="header__nav-item">
-        <a href="" class="header__nav-item-link">Реферальная программа</a>
-      </li>
-      <li class="header__nav-item">
-        <a href="" class="header__nav-item-link">Блог</a>
-      </li>
-      <li class="header__nav-item">
-        <a href="" class="header__nav-item-link">о нас</a>
-      </li>
-      <li class="header__nav-item">
-        <a href="" class="header__nav-item-link">документы</a>
-      </li>
-    </ul>
-    <a href="#" class="header__top-button">ИНВЕСТИРОВАТЬ</a>
+    <a class="header__logo-wrapper">
+      <svg class="header__logo-svg" role="img" width="28" height="42" aria-label="Логотип компании БРИДЖ">
+        <use xlink:href="img/logo.svg#logo"></use>
+      </svg>
+      <picture>
+        <source media="(min-width: 768px)" srcset="img/logo.svg#logo-text">
+        <img class="header__logo-text" src="img/logo.svg#none-black" width="114" height="38"
+          alt="Текст логотипа компании БРИДЖ">
+      </picture>
+    </a>
+    <div class="header__nav-wrapper">
+      <ul class="header__nav">
+        <li class="header__nav-item">
+          <a href="" class="header__nav-item-link">Инвестиции</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="" class="header__nav-item-link">Займы</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="" class="header__nav-item-link">Реферальная программа</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="" class="header__nav-item-link">Блог</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="" class="header__nav-item-link">о нас</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="" class="header__nav-item-link">документы</a>
+        </li>
+      </ul>
+      <a href="#" class="header__top-button">ИНВЕСТИРОВАТЬ</a>
+    </div>
     <ul class="header__controls">
       <li class="header__controls-item">
         <a href="#" class="header__controls-link">
@@ -67,6 +71,11 @@
         </a>
       </li>
     </ul>
+    <a href="#" class="header__button-nav">
+      <svg class="header__menu-svg" role="img" width="33" height="11" aria-label="Кнопка меню">
+        <use xlink:href="img/stack.svg#menu"></use>
+      </svg>
+    </a>
     <p class="header__text">Пассивный доход до <span class="header__text-secretion">20%</span> годовых на инвестициях в
       недвижимость.</p>
     <ul class="header__social">
@@ -88,28 +97,26 @@
       </li>
       <li class="header__social-item">
         <a href="#" class="header__social-link">
-          <svg class="header__social-svg header__social-svg--instagram" role="img" aria-label="Мы в instagram" width="37"
-            height="37">
+          <svg class="header__social-svg header__social-svg--instagram" role="img" aria-label="Мы в instagram"
+            width="37" height="37">
             <use xlink:href="img/stack.svg#instagram"></use>
           </svg>
         </a>
       </li>
       <li class="header__social-item">
         <a href="#" class="header__social-link">
-          <svg class="header__social-svg header__social-svg--vkontakte" role="img" aria-label="Мы в вконтакте" width="37"
-            height="37">
+          <svg class="header__social-svg header__social-svg--vkontakte" role="img" aria-label="Мы в вконтакте"
+            width="37" height="37">
             <use xlink:href="img/stack.svg#vk"></use>
           </svg>
         </a>
       </li>
     </ul>
     <div class="header__video-bar">
-      <div class="header__video-text">
-        <a href="#" class="header__video-link">
-          <p class="header__video-top-text">Новое видео уже на YouTube</p>
-          <p class="header__video-bottom-text">Смотреть видео</p>
-        </a>
-      </div>
+      <a href="#" class="header__video-link">
+        <p class="header__video-text header__video-text--top">Новое видео уже на YouTube</p>
+        <p class="header__video-text header__video-text--bottom">Смотреть видео</p>
+      </a>
       <div class="header__video-mask">
         <video class="header__video" src="#" controls poster="img/video-poster.jpg"></video>
       </div>
@@ -117,7 +124,7 @@
   </header>
 
   <main>
-    <section class="promo">
+    <!-- <section class="promo">
       <h1 class="visually-hidden">Заработки</h1>
       <p class="promo__text-number">38 469 800 ₽</p>
       <p class="promo__text">Заработали наши инвесторы на рынке недвижимости</p>
@@ -134,8 +141,8 @@
           <th>Текщий рамер портфеля</th>
         </tr>
       </table>
-    </section>
-    <section class="options">
+    </section> -->
+    <!-- <section class="options">
       <h2 class="options__title">Варианты инвестирования</h2>
       <div class="options__trust">
         <h3 class="options__trust-title">Доверительное Управление (ДУ)</h3>
@@ -198,8 +205,8 @@
           <a class="options__button" href="#">инвестировать</a>
         </div>
       </div>
-    </section>
-    <section class="calculator">
+    </section> -->
+    <!-- <section class="calculator">
       <h2 class="calculator__title">Калькулятор дохода в Доверительном Управлении</h2>
       <form class="calculator__form">
         <div class="calculator__field">
@@ -255,8 +262,8 @@
           <a href="#">Получить консультацию</a>
         </fieldset>
       </form>
-    </section>
-    <section class="investor">
+    </section> -->
+    <!-- <section class="investor">
       <h2 class="investor__title">Как стать инвестором</h2>
       <div class="investor__info-wrapper">
         <ol class="investor__info">
@@ -276,8 +283,8 @@
       </div>
       <a href="#" class="investor__button investor__button--bid">оставить заявку</a>
       <a href="#" class="investor__button investor__button--documents">необходимые документы</a>
-    </section>
-    <section class="reviews">
+    </section> -->
+    <!-- <section class="reviews">
       <h2 class="reviews__title">Отзывы инвесторов</h2>
       <a href="#" class="reviews__link">Отзывы инвесторов</a>
       <div class="reviews__slider swiper-container">
@@ -299,17 +306,17 @@
           </div>
         </div>
       </div>
-    </section>
-    <section class="guaranty">
+    </section> -->
+    <!-- <section class="guaranty">
       <h2 class="guaranty__title">Гарантии</h2>
       <p class="guaranty__text">Каждая сделка подкреплена залогом в виде ликвидной недвижимости. Ее рыночная стоимость
         минимум в 2 раза выше суммы
         инвестиций, что перекрывает риски</p>
       <a href="#" class="guaranty__button">Получить консультацию</a>
-    </section>
+    </section> -->
   </main>
 
-  <footer class="footer">
+  <!-- <footer class="footer">
     <div class="footer__top">
       <a class="footer__logo-link" href="#">
         <svg class="footer__logo-svg" role="img" aria-label="Логотип компании БРИДЖ" width="168" height="63">
@@ -407,7 +414,7 @@
     <p class="footer__cookies">Мы используем Cookies для сбора обезличенных данных. Они полезны для статистики, анализа
       трафика и настройки подходящей
       рекламы. Оставаясь на сайте, вы соглашаетесь на сбор таких данных.</p>
-  </footer>
+  </footer> -->
 
 </body>
 
