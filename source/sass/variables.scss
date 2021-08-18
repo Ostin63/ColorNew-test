@@ -1,0 +1,15 @@
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --black-25: rgba(0, 0, 0, 0.25);
+  --grey: #181818;
+  --yellow: #ff970a;
+}
+
+$font-inter: "Inter", "Arial", sans-serif;
+$font-sfuiIdisplay: "SFUIDisplay", "Arial", ans-serif;
+
+$gradient: linear-gradient(0deg, var(--black-25), var(--black-25));
