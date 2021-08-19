@@ -1,18 +1,24 @@
 $tablet-width: 768px;
-$desktop-width: 1200px;
+$desktop-width: 1355px;
 $desktop-width-max: 1440px;
 
 :root {
   --white: #ffffff;
   --white-0: rgba(155, 155, 155, 0);
+  --white-30: rgba(255, 255, 255, 0.3);
   --black: #000000;
   --black-25: rgba(0, 0, 0, 0.25);
+  --special-black: #060416;
   --grey: #181818;
   --yellow: #ff970a;
+  --red: #ff0000;
+  --special-grey: #a3a3a3;
 }
 
 $font-inter: "Inter", "Arial", sans-serif;
-$font-sfuiIdisplay: "SFUIDisplay", "Arial", ans-serif;
+$font-sfuiIdisplay: "SFUIDisplay", "Arial", sans-serif;
 
 $gradient-black: linear-gradient(0deg, var(--black-25), var(--black-25));
 $gradient-white: linear-gradient(124.94deg, var(--black-25) -120.88%, var(--white-0) 127.52%);
+
+$border-30: 1px solid var(--white-30);

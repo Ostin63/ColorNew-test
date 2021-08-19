@@ -15,10 +15,17 @@
     background-repeat: no-repeat;
     background-size: 1440px 806px;
     background-position: 50% 0;
+
+    &::after {
+      content: "";
+      border-bottom: $border-30;
+      grid-column: 1 / -1;
+      grid-row: 1 / 2;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr 165px 633px 547px 1fr;
+    grid-template-columns: 1fr 165px 558px 622px 1fr;
   }
 }
 
@@ -67,22 +74,49 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     grid-column: 3 / -2;
   }
 }
 
+.header__nav {
+  width: 100%;
+  margin: auto 70px auto 128px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  grid-column: 3 / -2;
+}
+
 .header__nav-item-link {
-  @media (min-width: $desktop-width) {
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 99.5%;
-    font-family: $font-inter;
-    color: var(--white);
-  }
+  display: flex;
+  margin: 20px 0;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 99.5%;
+  font-family: $font-inter;
+  color: var(--white);
+}
+
+.header__top-button {
+  height: 49px;
+  margin: auto 0;
+  padding: 0 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: $border-30;
+  border-radius: 60px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 99.5%;
+  font-family: $font-sfuiIdisplay;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  color: var(--yellow);
 }
 
 .header__controls {
@@ -94,6 +128,13 @@
   justify-content: space-between;
   grid-column: 5 / 6;
   grid-row: 1 / 2;
+
+  @media (min-width: $desktop-width) {
+    height: 22px;
+    margin: 25px 0 0 auto;
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+  }
 }
 
 .header__controls-item {
@@ -132,6 +173,7 @@
 
   @media (min-width: $tablet-width) {
     width: 688px;
+    margin-top: 160px;
     font-size: 72.5158px;
   }
 }
@@ -141,13 +183,76 @@
 }
 
 .header__social {
+  padding-left: 0;
+  list-style: none;
   display: none;
+
+  @media (min-width: $desktop-width) {
+    height: 220px;
+    margin: 200px 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+  }
+}
+
+.header__social-svg {
+  fill: var(--special-black);
+
+  &--youtube {
+    fill: var(--red);
+  }
+}
+
+.header__social-link {
+  width: 37px;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--white);
+  border-radius: 50%;
 }
 
 .header__video-bar {
+  position: relative;
   display: flex;
   grid-column: 4 / -1;
   grid-row: -2 / -1;
+
+  @media (min-width: $tablet-width) {
+    width: 622px;
+    margin-left: auto;
+    grid-column: 3 / -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 4 / -2;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 29px;
+    height: 25px;
+    top: 17px;
+    left: 112px;
+    background: url("../img/stack.svg#play-white") 50% 50% no-repeat;
+    background-size: 29px 25px;
+    cursor: pointer;
+    z-index: 10;
+
+    @media (min-width: $tablet-width) {
+      width: 79px;
+      height: 68px;
+      top: 47px;
+      left: 354px;
+      background-size: 79px 68px;
+      z-index: 10;
+    }
+  }
 }
 
 .header__video-link {
@@ -163,8 +268,11 @@
   @media (min-width: $tablet-width) {
     width: 446px;
     height: 154px;
-    margin-left: -400px;
     padding: 53px 0 0 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }
 
@@ -225,26 +333,6 @@
     @media (min-width: $tablet-width) {
       width: 242px;
       height: 154px;
-    }
-  }
-
-  &::after {
-    position: absolute;
-    content: "";
-    width: 29px;
-    height: 25px;
-    top: 17px;
-    background: url("../img/stack.svg#play-white") 50% 50% no-repeat;
-    background-size: 29px 25px;
-    cursor: pointer;
-
-    @media (min-width: $tablet-width) {
-      width: 79px;
-      height: 68px;
-      top: 47px;
-      left: -26px;
-      background-size: 79px 68px;
-      z-index: 10;
     }
   }
 }
