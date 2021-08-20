@@ -13,10 +13,6 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 50px 1275px 20px 1fr;
     border-bottom: none;
-    background-image: url("../img/berg.png");
-    background-repeat: no-repeat;
-    background-position: 98% 50%;
-    background-size: 332px 195px;
   }
 }
 
@@ -73,8 +69,24 @@
 }
 
 .promo__info {
+  position: relative;
   max-width: 714px;
   grid-column: 2 / -2;
+
+  &::after {
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      content: "";
+      width: 332px;
+      height: 195px;
+      top: -95px;
+      right: -570px;
+      background-image: url("../img/berg.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: 332px 195px;
+    }
+  }
 }
 
 .promo__info-text {
