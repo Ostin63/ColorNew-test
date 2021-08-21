@@ -160,128 +160,181 @@
       </table>
     </section>
     <section class="options">
-      <h2 class="options__title">Варианты инвестирования</h2>
-      <ul class="options__nav">
-        <li class="options__nav-item options__nav-item--active">
-          <button class="options__nav-button">Доверительное Управление (ДУ)</button>
-        </li>
-        <li class="options__nav-item">
-          <button class="options__nav-button">Финансирование конкретной сделки</button>
-        </li>
-      </ul>
-      <div class="options__cart options__cart--trust options__cart--active">
-        <h3 class="options__cart-title">Доверительное Управление (ДУ)</h3>
-        <ul class="options__menu">
-          <li class="options__menu-item">
-            <a href="#" class="options__menu-link options__menu-link--active">Условия</a>
+      <div class="options__wrapper">
+        <h2 class="options__title">Варианты инвестирования</h2>
+        <ul class="options__nav">
+          <li class="options__nav-item options__nav-item--active">
+            <button class="options__nav-button">Доверительное Управление (ДУ)</button>
           </li>
-          <li class="options__menu-item">
-            <a href="#" class="options__menu-link">Преимущества</a>
-          </li>
-          <li class="options__menu-item">
-            <a href="#" class="options__menu-link">Ограничения</a>
-          </li>
-          <li class="options__menu-item">
-            <a href="#" class="options__menu-link">Шаблон договора</a>
+          <li class="options__nav-item">
+            <button class="options__nav-button">Финансирование конкретной сделки</button>
           </li>
         </ul>
-        <p class="options__work">Как это работает?</p>
-        <p class="options__text">Вы инвестируете деньги, мы вкладываем их в выгодные сделки</p>
-        <div class="options__info">
-          <table class="options__info-table">
-            <tr>
-              <th scope="col">Доход:</th>
-              <th scope="col">Вклад:</th>
-            </tr>
-            <tr>
-              <td class="options__info-rate">12%</td>
-              <td class="options__info-range" rowspan="2">
-                <div class="options__info-range-wrapper">
-                  <span>от </span>100 тыс<span> до </span>
-                  <p>-</p>249 тыс
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="options__info-term">годовых</td>
-            </tr>
-            <tr>
-              <td class="options__info-rate">14%</td>
-              <td class="options__info-range" rowspan="2">
-                <div class="options__info-range-wrapper">
-                  <span>от </span>250 тыс<span> до </span>
-                  <p>-</p>499 тыс
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="options__info-term">годовых</td>
-            </tr>
-            <tr>
-              <td class="options__info-rate">16%</td>
-              <td class="options__info-range" rowspan="2">
-                <div class="options__info-range-wrapper">
-                  <span>от </span>450 тыс<span> до </span>
-                  <p>-</p>1 млн
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="options__info-term">годовых</td>
-            </tr>
-            <tr>
-              <td class="options__info-rate">18%</td>
-              <td class="options__info-range" rowspan="2">от 1 млн</td>
-            </tr>
-            <tr>
-              <td class="options__info-term">годовых</td>
-            </tr>
-          </table>
-          <div class="options__info-text-wrapper">
-            <p class="options__info-text">Если срок менее 1 года, то доходность уменьшается на 1%</p>
-          </div>
-        </div>
-        <div class="options__wrapper-button">
-          <a class="options__button" href="#">инвестировать</a>
-        </div>
-      </div>
-      <div class="options__cart options__cart--specific">
-        <h3 class="options__cart-title">Финансирование Сделки (ФС)</h3>
-        <ul class="options__menu">
-          <li class="options__menu-item">
-            <a href="#" class="options__menu-link options__menu-link--active">Условия</a>
+        <ul class="options__cart-wrapper">
+          <li class="options__cart options__cart--trust options__cart--active">
+            <h3 class="options__cart-title">Доверительное Управление (ДУ)</h3>
+            <ul class="options__menu">
+              <li class="options__menu-item options__menu-item--active">
+                <a href="#" class="options__menu-link">Условия</a>
+              </li>
+              <li class="options__menu-item">
+                <a href="#" class="options__menu-link">Преимущества</a>
+              </li>
+              <li class="options__menu-item">
+                <a href="#" class="options__menu-link">Ограничения</a>
+              </li>
+              <li class="options__menu-item">
+                <a href="#" class="options__menu-link">Шаблон договора</a>
+              </li>
+            </ul>
+            <p class="options__work">Как это работает?</p>
+            <p class="options__text">Вы инвестируете деньги, мы вкладываем их в выгодные сделки</p>
+            <div class="options__info">
+              <table class="options__info-table options__info-table--min">
+                <tr>
+                  <th scope="col">Доход:</th>
+                  <th scope="col">Вклад:</th>
+                </tr>
+                <tr>
+                  <td class="options__info-rate">12%</td>
+                  <td class="options__info-range" rowspan="2">
+                    <div class="options__info-range-wrapper">100 тыс - 249 тыс</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="options__info-term">годовых</td>
+                </tr>
+                <tr>
+                  <td class="options__info-rate">14%</td>
+                  <td class="options__info-range" rowspan="2">
+                    <div class="options__info-range-wrapper">
+                      250 тыс - 499 тыс
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="options__info-term">годовых</td>
+                </tr>
+                <tr>
+                  <td class="options__info-rate">16%</td>
+                  <td class="options__info-range" rowspan="2">
+                    <div class="options__info-range-wrapper">
+                      450 тыс - 1 млн
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="options__info-term">годовых</td>
+                </tr>
+                <tr>
+                  <td class="options__info-rate">18%</td>
+                  <td class="options__info-range" rowspan="2">от 1 млн</td>
+                </tr>
+                <tr>
+                  <td class="options__info-term">годовых</td>
+                </tr>
+              </table>
+              <table class="options__info-table options__info-table--max">
+                <tr>
+                  <th>Доход:</th>
+                  <td class="options__info-rate options__info-rate--max">12%</td>
+                  <td class="options__info-rate options__info-rate--max">14%</td>
+                  <td class="options__info-rate options__info-rate--max">16%</td>
+                  <td class="options__info-rate options__info-rate--max">18%</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td class="options__info-term options__info-term--max">годовых</td>
+                  <td class="options__info-term options__info-term--max">годовых</td>
+                  <td class="options__info-term options__info-term--max">годовых</td>
+                  <td class="options__info-term options__info-term--max">годовых</td>
+                </tr>
+                <tr>
+                  <th>Вклад:</th>
+                  <td class="options__info-range">
+                    <div class="options__info-range-wrapper">от&nbsp;100&nbsp;тыс</div>
+                  </td>
+                  <td class="options__info-range">
+                    <div class="options__info-range-wrapper">от&nbsp;250&nbsp;тыс</div>
+                  </td>
+                  <td class="options__info-range">
+                    <div class="options__info-range-wrapper">от&nbsp;450&nbsp;тыс</div>
+                  </td>
+                  <td class="options__info-range">
+                    <div class="options__info-range-wrapper">от&nbsp;1&nbsp;млн</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td class="options__info-range">
+                    <div class="options__info-range-wrapper">до&nbsp;249&nbsp;тыс</div>
+                  </td>
+                  <td class="options__info-range">
+                    <div class="options__info-range-wrapper">до&nbsp;499&nbsp;тыс</div>
+                  </td>
+                  <td class="options__info-range">
+                    <div class="options__info-range-wrapper">до&nbsp;1&nbsp;млн</div>
+                  </td>
+                  <td class="options__info-range">
+                    <div class="options__info-range-wrapper"></div>
+                  </td>
+                </tr>
+              </table>
+              <div class="options__info-text-wrapper">
+                <p class="options__info-text">Если срок менее 1 года, то доходность уменьшается на 1%</p>
+              </div>
+            </div>
+            <div class="options__wrapper-button">
+              <a class="options__button" href="#">инвестировать</a>
+            </div>
           </li>
-          <li class="options__menu-item">
-            <a href="#" class="Доступные лоты">Преимущества</a>
-          </li>
-          <li class="options__menu-item">
-            <a href="#" class="options__menu-link">Преимущества</a>
-          </li>
-          <li class="options__menu-item">
-            <a href="#" class="options__menu-link">Ограничения</a>
-          </li>
-          <li class="options__menu-item">
-            <a href="#" class="options__menu-link">Шаблон договора</a>
+          <li class="options__cart options__cart--specific">
+            <h3 class="options__cart-title">Финансирование Сделки (ФС)</h3>
+            <ul class="options__menu">
+              <li class="options__menu-item options__menu-item--active">
+                <a href="#" class="options__menu-link">Условия</a>
+              </li>
+              <li class="options__menu-item">
+                <a href="#" class="options__menu-link">Доступные лоты</a>
+              </li>
+              <li class="options__menu-item">
+                <a href="#" class="options__menu-link">Преимущества</a>
+              </li>
+              <li class="options__menu-item">
+                <a href="#" class="options__menu-link">Ограничения</a>
+              </li>
+              <li class="options__menu-item">
+                <a href="#" class="options__menu-link">Шаблон договора</a>
+              </li>
+            </ul>
+            <p class="options__work">Как это работает?</p>
+            <p class="options__text">Вид финансирования, при котором один инвестор покрывает всю сумму сделки и
+              становится
+              залогодержателем</p>
+            <div class="options__info">
+              <table class="options__info-table">
+                <tr>
+                  <th>Доход:</th>
+                  <th>Вклад:</th>
+                </tr>
+                <tr>
+                  <td class="options__info-rate">18-20%</td>
+                  <td class="options__info-rate">от 500 тыс</td>
+                </tr>
+                <tr>
+                  <td>
+                <tr>
+                  <td class="options__info-term">годовых</td>
+                </tr>
+                </td>
+                </tr>
+              </table>
+            </div>
+            <div class="options__wrapper-button">
+              <a class="options__button" href="#">инвестировать</a>
+            </div>
           </li>
         </ul>
-        <p class="options__work">Как это работает?</p>
-        <p class="options__text">Вид финансирования, при котором один инвестор покрывает всю сумму сделки и становится
-          залогодержателем</p>
-        <div class="options__info">
-          <table class="options____info-table">
-            <tr>
-              <th>Доход:</th>
-              <th>Вклад:</th>
-            </tr>
-            <tr>
-              <td>18-20%<span>годовых</span></td>
-              <td>от 500 тыс<span>годовых</span></td>
-            </tr>
-          </table>
-        </div>
-        <div class="options__wrapper-button">
-          <a class="options__button" href="#">инвестировать</a>
-        </div>
       </div>
     </section>
     <!-- <section class="calculator">
