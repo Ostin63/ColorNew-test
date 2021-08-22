@@ -347,73 +347,75 @@
       </div>
     </section>
     <section class="calculator">
-      <h2 class="calculator__title">Калькулятор дохода в Доверительном Управлении</h2>
+      <h2 class="calculator__title">Калькулятор дохода в <br>Доверительном Управлении</h2>
       <form class="calculator__form">
-        <fieldset class="calculator__fieldset calculator__fieldset--slider">
-          <legend class="calculator__legend">Сумма сбережений</legend>
-          <label class="calculator__label"></label>
-          <div class="calculator__wrapper-input-slider">
-            <input class="calculator__input calculator__input--slider" value="2 050 000 ₽">
-          </div>
-          <div class="calculator__slider" id="slider"></div>
-          <div class="calculator__sum-wrapper">
-            <p class="calculator__sum">100 тыс</p>
-            <p class="calculator__sum">5 млн</p>
-          </div>
-        </fieldset>
-        <fieldset class="calculator__fieldset calculator__fieldset--term">
-          <legend class="calculator__legend">Срок</legend>
-          <ul class="calculator__list-term">
-            <li class="calculator__item-term">
-              <input class="calculator__input calculator__input--term visually-hidden" type="radio" name="time"
-                id="half-year" checked>
-              <label class="calculator__label calculator__label--term" for="half-year">6 мес</label>
-            </li>
-            <li class="calculator__item-term">
-              <input class="calculator__input calculator__input--term visually-hidden" type="radio" name="time"
-                id="year">
-              <label class="calculator__label calculator__label--term" for="year">12 мес</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="calculator__fieldset calculator__fieldset--term">
-          <legend class="calculator__legend">Выплаты</legend>
-          <ul class="calculator__list-term">
-            <li class="calculator__item-term">
-              <input class="calculator__input calculator__input--term visually-hidden" type="radio" name="pay"
-                id="pay-end" checked><label class="calculator__label calculator__label--term" for="pay-end">В конце
-                срока</label>
-            </li>
-            <li class="calculator__item-term">
-              <input class="calculator__input calculator__input--term visually-hidden" type="radio" name="pay"
-                id="month">
-              <label class="calculator__label calculator__label--term" for="month">Ежемесячно</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="calculator__fieldset calculator__fieldset--pay">
-          <legend class="visually-hidden">Расчет</legend>
-          <ul class="calculator__list-reckoning">
-            <li class="calculator__item-reckoning calculator__item-reckoning--top">
-              <label class="calculator__label calculator__label--pay" for="monthlyСharge">Ежемесячное начисление</label>
-              <input class="calculator__input calculator__input--pay-top" type="text" id="monthlyСharge" value="22 208 ₽">
-            </li>
-            <li class="calculator__item-reckoning calculator__item-reckoning--bottom">
-              <div class="calculator__wrapper-pay">
-                <label class="calculator__label calculator__label--pay" for="income">Доход</label>
-                <input class="calculator__input calculator__input--pay" type="text" id="income" value="13%">
-              </div>
-              <div class="calculator__wrapper-pay">
-                <label class="calculator__label calculator__label--pay" for="annualCharge">Ежегодное начисление</label>
-                <input class="calculator__input calculator__input--pay" type="text" id="annualCharge" value="316 500 ₽">
-              </div>
-            </li>
-          </ul>
-          <div class="calculator__wrapper-button">
-            <button class="calculator__button-submit" type="submit">Инвестировать</button>
-            <a class="calculator__button-link" href="#">Получить консультацию</a>
-          </div>
-        </fieldset>
+        <div class="calculator__form-wrapper calculator__form-wrapper--top">
+          <fieldset class="calculator__fieldset calculator__fieldset--slider">
+            <legend class="calculator__legend">Сумма сбережений</legend>
+            <label class="calculator__label"></label>
+            <div class="calculator__wrapper-input-slider">
+              <input class="calculator__input calculator__input--slider" value="2 050 000 ₽">
+            </div>
+            <div class="calculator__slider" id="slider"></div>
+            <div class="calculator__sum-wrapper">
+              <p class="calculator__sum">100 тыс</p>
+              <p class="calculator__sum">5 млн</p>
+            </div>
+          </fieldset>
+          <fieldset class="calculator__fieldset calculator__fieldset--term">
+            <legend class="calculator__legend">Срок</legend>
+            <ul class="calculator__list-term">
+              <li class="calculator__item-term">
+                <input class="calculator__input calculator__input--term visually-hidden" type="radio" name="time" id="half-year"
+                  checked>
+                <label class="calculator__label calculator__label--term" for="half-year">6 мес</label>
+              </li>
+              <li class="calculator__item-term">
+                <input class="calculator__input calculator__input--term visually-hidden" type="radio" name="time" id="year">
+                <label class="calculator__label calculator__label--term" for="year">12 мес</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="calculator__fieldset calculator__fieldset--term">
+            <legend class="calculator__legend">Выплаты</legend>
+            <ul class="calculator__list-term">
+              <li class="calculator__item-term">
+                <input class="calculator__input calculator__input--term visually-hidden" type="radio" name="pay" id="pay-end"
+                  checked><label class="calculator__label calculator__label--term" for="pay-end">В конце
+                  срока</label>
+              </li>
+              <li class="calculator__item-term">
+                <input class="calculator__input calculator__input--term visually-hidden" type="radio" name="pay" id="month">
+                <label class="calculator__label calculator__label--term" for="month">Ежемесячно</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="calculator__form-wrapper">
+          <fieldset class="calculator__fieldset calculator__fieldset--pay">
+            <legend class="visually-hidden">Расчет</legend>
+            <ul class="calculator__list-reckoning">
+              <li class="calculator__item-reckoning calculator__item-reckoning--top">
+                <label class="calculator__label calculator__label--pay" for="monthlyСharge">Ежемесячное начисление</label>
+                <input class="calculator__input calculator__input--pay-top" type="text" id="monthlyСharge" value="22 208 ₽">
+              </li>
+              <li class="calculator__item-reckoning calculator__item-reckoning--bottom">
+                <div class="calculator__wrapper-pay">
+                  <label class="calculator__label calculator__label--pay" for="income">Доход</label>
+                  <input class="calculator__input calculator__input--pay" type="text" id="income" value="13%">
+                </div>
+                <div class="calculator__wrapper-pay">
+                  <label class="calculator__label calculator__label--pay" for="annualCharge">Ежегодное начисление</label>
+                  <input class="calculator__input calculator__input--pay" type="text" id="annualCharge" value="316 500 ₽">
+                </div>
+              </li>
+            </ul>
+            <div class="calculator__wrapper-button">
+              <button class="calculator__button-submit" type="submit">Инвестировать</button>
+              <a class="calculator__button-link" href="#">Получить консультацию</a>
+            </div>
+          </fieldset>
+        </div>
       </form>
     </section>
     <!-- <section class="investor">
