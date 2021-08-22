@@ -16,11 +16,15 @@ $desktop-width-max: 1440px;
   --yellow: #ff970a;
   --yellow-10: #ff9a10;
   --yellow-19: #ff9519;
-  --yelow-41: rgba(255, 151, 10, 0.41);
+  --yellow-41: rgba(255, 151, 10, 0.41);
+  --yellow-svg: #ff9619;
   --red: #ff0000;
   --special-grey: #a3a3a3;
   --grey-text: #a9a9a9;
   --grey-table: #c0c0c0;
+  --grey-radio: #696969;
+  --grey-border: #7c7571;
+  --grey-color: #a2a2a2;
 }
 
 $font-inter: "Inter", "Arial", sans-serif;
@@ -33,6 +37,8 @@ $gradient-white: linear-gradient(124.94deg, var(--black-25) -120.88%, var(--whit
 $gradient-button: linear-gradient(52.76deg, var(--yellow-10) 18.82%, var(--yellow-19) 77.36%);
 
 $border-30: 1px solid var(--white-30);
+$border-30-2: 2px solid var(--white-30);
 $border-yellow: 1.5px solid var(--yellow);
+$border-grey: 1px solid var(--grey-border);
 
-$shadow: 0 2.4px 12px var(--yelow-41);
+$shadow: 0 2.4px 12px var(--yellow-41);
