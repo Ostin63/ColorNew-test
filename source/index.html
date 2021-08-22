@@ -366,12 +366,13 @@
             <legend class="calculator__legend">Срок</legend>
             <ul class="calculator__list-term">
               <li class="calculator__item-term">
-                <input class="calculator__input calculator__input--term visually-hidden" type="radio" name="time" id="half-year"
-                  checked>
+                <input class="calculator__input calculator__input--term visually-hidden" type="radio" name="time"
+                  id="half-year" checked>
                 <label class="calculator__label calculator__label--term" for="half-year">6 мес</label>
               </li>
               <li class="calculator__item-term">
-                <input class="calculator__input calculator__input--term visually-hidden" type="radio" name="time" id="year">
+                <input class="calculator__input calculator__input--term visually-hidden" type="radio" name="time"
+                  id="year">
                 <label class="calculator__label calculator__label--term" for="year">12 мес</label>
               </li>
             </ul>
@@ -380,12 +381,13 @@
             <legend class="calculator__legend">Выплаты</legend>
             <ul class="calculator__list-term">
               <li class="calculator__item-term">
-                <input class="calculator__input calculator__input--term visually-hidden" type="radio" name="pay" id="pay-end"
-                  checked><label class="calculator__label calculator__label--term" for="pay-end">В конце
+                <input class="calculator__input calculator__input--term visually-hidden" type="radio" name="pay"
+                  id="pay-end" checked><label class="calculator__label calculator__label--term" for="pay-end">В конце
                   срока</label>
               </li>
               <li class="calculator__item-term">
-                <input class="calculator__input calculator__input--term visually-hidden" type="radio" name="pay" id="month">
+                <input class="calculator__input calculator__input--term visually-hidden" type="radio" name="pay"
+                  id="month">
                 <label class="calculator__label calculator__label--term" for="month">Ежемесячно</label>
               </li>
             </ul>
@@ -396,8 +398,10 @@
             <legend class="visually-hidden">Расчет</legend>
             <ul class="calculator__list-reckoning">
               <li class="calculator__item-reckoning calculator__item-reckoning--top">
-                <label class="calculator__label calculator__label--pay" for="monthlyСharge">Ежемесячное начисление</label>
-                <input class="calculator__input calculator__input--pay-top" type="text" id="monthlyСharge" value="22 208 ₽">
+                <label class="calculator__label calculator__label--pay" for="monthlyСharge">Ежемесячное
+                  начисление</label>
+                <input class="calculator__input calculator__input--pay-top" type="text" id="monthlyСharge"
+                  value="22 208 ₽">
               </li>
               <li class="calculator__item-reckoning calculator__item-reckoning--bottom">
                 <div class="calculator__wrapper-pay">
@@ -405,8 +409,10 @@
                   <input class="calculator__input calculator__input--pay" type="text" id="income" value="13%">
                 </div>
                 <div class="calculator__wrapper-pay">
-                  <label class="calculator__label calculator__label--pay" for="annualCharge">Ежегодное начисление</label>
-                  <input class="calculator__input calculator__input--pay" type="text" id="annualCharge" value="316 500 ₽">
+                  <label class="calculator__label calculator__label--pay" for="annualCharge">Ежегодное
+                    начисление</label>
+                  <input class="calculator__input calculator__input--pay" type="text" id="annualCharge"
+                    value="316 500 ₽">
                 </div>
               </li>
             </ul>
@@ -418,27 +424,41 @@
         </div>
       </form>
     </section>
-    <!-- <section class="investor">
+    <section class="investor">
       <h2 class="investor__title">Как стать инвестором</h2>
-      <div class="investor__info-wrapper">
-        <ol class="investor__info">
-          <li class="investor__info-item">
-            <p class="investor__info-text">Вы оставляете заявку</p>
-          </li>
-          <li class="investor__info-item">
-            <p class="investor__info-text">Обсуждаем вопросы</p>
-          </li>
-          <li class="investor__info-item">
-            <p class="investor__info-text">Подписываете документы</p>
-          </li>
-          <li class="investor__info-item">
-            <p class="investor__info-text">Инвестируйте и получаете ежемесячный доход</p>
-          </li>
-        </ol>
+      <ol class="investor__info">
+        <li class="investor__info-item">
+          <p class="investor__info-text">Вы оставляете заявку</p>
+          <svg class="investor__svg-arrow" role="img" aria-label="стрелочка" width="27" height="46">
+            <use xlink:href="img/stack.svg#arrow-big"></use>
+          </svg>
+        </li>
+        <li class="investor__info-item">
+          <p class="investor__info-text">Обсуждаем вопросы</p>
+          <svg class="investor__svg-arrow" role="img" aria-label="стрелочка" width="27" height="46">
+            <use xlink:href="img/stack.svg#arrow-big"></use>
+          </svg>
+        </li>
+        <li class="investor__info-item">
+          <p class="investor__info-text">Подписываете документы</p>
+          <svg class="investor__svg-arrow" role="img" aria-label="стрелочка" width="27" height="46">
+            <use xlink:href="img/stack.svg#arrow-big"></use>
+          </svg>
+        </li>
+        <li class="investor__info-item">
+          <p class="investor__info-text">Инвестируйте и получаете ежемесячный доход</p>
+        </li>
+      </ol>
       </div>
-      <a href="#" class="investor__button investor__button--bid">оставить заявку</a>
-      <a href="#" class="investor__button investor__button--documents">необходимые документы</a>
-    </section> -->
+      <div class="investor__button-wrapper">
+        <a href="#" class="investor__button investor__button--bid">оставить заявку
+          <svg class="investor__svg-button" role="img" aria-label="стрелочка" width="28" height="17">
+            <use xlink:href="img/stack.svg#arrow-big"></use>
+          </svg>
+        </a>
+        <a href="#" class="investor__button investor__button--documents">необходимые документы</a>
+      </div>
+    </section>
     <!-- <section class="reviews">
       <h2 class="reviews__title">Отзывы инвесторов</h2>
       <a href="#" class="reviews__link">Отзывы инвесторов</a>
