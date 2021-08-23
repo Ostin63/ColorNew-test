@@ -118,9 +118,7 @@
         <p class="header__video-text header__video-text--top">Новое видео уже на YouTube</p>
         <p class="header__video-text header__video-text--bottom">Смотреть видео</p>
       </a>
-      <div class="header__video-mask">
-        <video class="header__video" src="#" controls poster="img/video-poster.jpg"></video>
-      </div>
+      <div class="header__video-mask"></div>
     </div>
   </header>
 
@@ -462,19 +460,28 @@
         <div class="reviews__slider-wrapper swiper-wrapper">
           <div class="reviews__slide swiper-slide">
             <div class="reviews__slide-mask">
-              <video class="reviews__video" src="#" controls poster="img/video-poster-reviews-1.jpg"></video>
+              <video class="reviews__video" src="video/video-1.mp4" controls poster="img/video-poster-reviews-1.jpg"></video>
+              <div class="reviews__wrapper-video-text">
+                <p class="reviews__video-text">5 минут</p>
+              </div>
               <p class="reviews__slide-text">Отзыв нашего инвестора</p>
             </div>
           </div>
           <div class="reviews__slide swiper-slide">
             <div class="reviews__slide-mask">
-              <video class="reviews__video" src="#" controls poster="img/video-poster.jpg"></video>
+              <video class="reviews__video" src="video/video-2.mp4" controls poster="img/video-poster.jpg"></video>
+              <div class="reviews__wrapper-video-text">
+                <p class="reviews__video-text">1 час 10 минут</p>
+              </div>
               <p class="reviews__slide-text">Отзыв нашего инвестора</p>
             </div>
           </div>
           <div class="reviews__slide swiper-slide">
             <div class="reviews__slide-mask">
-              <video class="reviews__video" src="#" controls poster="img/video-poster-reviews-3.jpg"></video>
+              <video class="reviews__video" src="video/video-3.mp4" controls poster="img/video-poster-reviews-3.jpg"></video>
+              <div class="reviews__wrapper-video-text">
+                <p class="reviews__video-text">1 час 55 минут</p>
+              </div>
               <p class="reviews__slide-text">Отзыв нашего инвестора</p>
             </div>
           </div>
@@ -537,59 +544,63 @@
           </a>
         </li>
       </ul>
-      <a href="tel:88000000000">8 (800) 000 00 00</a>
-      <p>Для звонков по всей России</p>
-      <a href="mailto:bridgefond@mail.ru">bridgefond@mail.ru</a>
+      <a href="tel:88000000000" class="footer__link footer__link--phone">8 (800) 000 00 00</a>
+      <p class="footer__text">Для звонков по всей России</p>
+      <a href="mailto:bridgefond@mail.ru" class="footer__link footer__link--mail">bridgefond@mail.ru</a>
     </div>
-    <ul class="footer__list-info">
-      <li class="footer__item-info">
-        <a href="#" class="footer__info-link">заемщикам</a>
-        <ul class="footer__list-borrowers">
-          <li class="footer__item-borrowers">
-            <a href="#" class="footer__borrowers-link">Рефинансирование</a>
-          </li>
-          <li class="footer__item-borrowers">
-            <a href="#" class="footer__borrowers-link">Займы под залог недвижимости</a>
-          </li>
-          <li class="footer__item-borrowers">
-            <a href="#" class="footer__borrowers-link">Срочный выкуп недвижимости</a>
-          </li>
-        </ul>
-      </li>
-      <li class="footer__item-info">
-        <a href="#" class="footer__info-link">Бизнес</a>
-        <ul class="footer__list-biz">
-          <li class="footer__item-biz">
-            <a href="#" class="footer__biz-link">Финансирование бизнеса</a>
-          </li>
-          <li class="footer__item-biz">
-            <a href="#" class="footer__biz-link">Инвестиции в бизнес</a>
-          </li>
-        </ul>
-      </li>
-      <li class="footer__item-info">
-        <a href="#" class="footer__info-link">Реферальная программа</a>
-      </li>
-      <li class="footer__item-info">
-        <a href="#" class="footer__info-link">документы</a>
-      </li>
-      <li class="footer__item-info">
-        <a href="#" class="footer__info-link">о нас</a>
-      </li>
-      <li class="footer__item-info">
-        <a href="#" class="footer__info-link">Блог</a>
-      </li>
-    </ul>
+    <div class="footer__list-wrapper">
+      <ul class="footer__list-info footer__list-info--top">
+        <li class="footer__item-info footer__item-info--list">
+          <a href="#" class="footer__info-link">заемщикам</a>
+          <ul class="footer__sub-list">
+            <li class="footer__sub-item">
+              <a href="#" class="footer__sub-link">Рефинансирование</a>
+            </li>
+            <li class="footer__sub-item">
+              <a href="#" class="footer__sub-link">Займы под залог недвижимости</a>
+            </li>
+            <li class="footer__sub-item">
+              <a href="#" class="footer__sub-link">Срочный выкуп недвижимости</a>
+            </li>
+          </ul>
+        </li>
+        <li class="footer__item-info footer__item-info--list">
+          <a href="#" class="footer__info-link">Бизнес</a>
+          <ul class="footer__sub-list">
+            <li class="footer__sub-item">
+              <a href="#" class="footer__sub-link">Финансирование бизнеса</a>
+            </li>
+            <li class="footer__item-biz">
+              <a href="#" class="footer__sub-link">Инвестиции в бизнес</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="footer__list-info footer__list-info--bottom">
+        <li class="footer__item-info footer__item-info--top">
+          <a href="#" class="footer__info-link">Реферальная программа</a>
+        </li>
+        <li class="footer__item-info footer__item-info--two">
+          <a href="#" class="footer__info-link">документы</a>
+        </li>
+        <li class="footer__item-info footer__item-info--three">
+          <a href="#" class="footer__info-link">о нас</a>
+        </li>
+        <li class="footer__item-info footer__item-info--bottom">
+          <a href="#" class="footer__info-link">Блог</a>
+        </li>
+      </ul>
+    </div>
     <form class="footer__form" action="#" method="post">
       <div class="footer__form-wrapper-input">
         <label for="name"></label>
-        <input type="text" name="name" id="name" placeholder="Ваше имя">
+        <input class="footer__form-input" type="text" name="name" id="name" placeholder="Ваше имя" required>
       </div>
       <div class="footer__form-wrapper-input">
         <label for="phone"></label>
-        <input type="tel" name="phone" id="phone" placeholder="Ваш номер телефона">
+        <input class="footer__form-input" type="tel" name="phone" id="phone" placeholder="Ваш номер телефона" required>
       </div>
-      <button type="submit">оставить заявку</button>
+      <button class="footer__form-button" type="submit">оставить заявку</button>
     </form>
     <p class="footer__cookies">Мы используем Cookies для сбора обезличенных данных. Они полезны для статистики, анализа
       трафика и настройки подходящей

@@ -1,5 +1,5 @@
 $tablet-width: 768px;
-$desktop-width: 1355px;
+$desktop-width: 1370px;
 $desktop-width-max: 1440px;
 
 :root {
@@ -19,6 +19,7 @@ $desktop-width-max: 1440px;
   --yellow-41: rgba(255, 151, 10, 0.41);
   --yellow-svg: #ff9619;
   --yellow-content: #ff9618;
+  --yellow-hover: #f8d8aa;
   --red: #ff0000;
   --special-grey: #a3a3a3;
   --grey-text: #a9a9a9;
@@ -28,6 +29,8 @@ $desktop-width-max: 1440px;
   --grey-color: #a2a2a2;
   --grey-light: #2b2b2b;
   --grey-guaranty: #4c4c4c;
+  --grey-social: #2c2c2c;
+  --grey-form: #a1a1a1;
 }
 
 $font-inter: "Inter", "Arial", sans-serif;

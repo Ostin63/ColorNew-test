@@ -11,7 +11,7 @@ noUiSlider.create(sliderElement, {
     max:5000000,
   },
   start: 2050000,
-  step: 1,
+  step: 50000,
   connect: 'lower',
 });
 

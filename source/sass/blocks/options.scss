@@ -387,6 +387,7 @@
   text-transform: uppercase;
   background: $gradient-button;
   box-shadow: $shadow;
+  border: none;
   border-radius: 32.8px;
   font-weight: 600;
   font-size: 12px;
@@ -398,6 +399,11 @@
   @media (min-width: $desktop-width) {
     height: 53px;
     font-size: 15px;
+  }
+
+  &:hover,
+  &:focus {
+    background: var(--yellow-hover);
   }
 }
 

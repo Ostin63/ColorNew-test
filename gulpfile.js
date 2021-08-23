@@ -88,6 +88,17 @@ const copy = (done) => {
 };
 exports.copy = copy;
 
+const copyvideo = (done) => {
+  src([
+    'source/video/*.mp4',
+  ], {
+    base: 'source',
+  })
+    .pipe(dest('build'));
+  done();
+};
+exports.copyvideo = copyvideo;
+
 const copymodules = (done) => {
   src([
     'node_modules/swiper/swiper-bundle.min.js',
@@ -137,6 +148,7 @@ const build = series(
     svgstack,
     copymodules,
     images,
+    copyvideo,
   ),
 );
 
@@ -152,6 +164,7 @@ exports.default = series(
     logo,
     copymodules,
     svgstack,
+    copyvideo,
   ),
   series(
     server,

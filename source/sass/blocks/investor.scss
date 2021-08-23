@@ -159,6 +159,11 @@
   text-transform: uppercase;
   color: var(--black);
 
+  &:hover,
+  &:focus {
+    background: var(--yellow-hover);
+  }
+
   @media (min-width: $tablet-width) {
     width: 265px;
     height: 53px;
@@ -173,6 +178,11 @@
     border: $border-grey;
     background: var(--black);
     color: var(--grey-color);
+
+    &:hover,
+    &:focus {
+      color: var(--black);
+    }
 
     @media (min-width: $tablet-width) {
       margin: 0 0 0 45px;

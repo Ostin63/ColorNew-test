@@ -333,6 +333,11 @@
     margin: 0;
     font-size: 15px;
   }
+
+  &:hover,
+  &:focus {
+    background: var(--yellow-hover);
+  }
 }
 
 .calculator__button-link {
@@ -357,5 +362,11 @@
 
   @media (min-width: $desktop-width) {
     margin: 7px 0 0;
+  }
+
+  &:hover,
+  &:focus {
+    background: var(--yellow-hover);
+    color: var(--black);
   }
 }
