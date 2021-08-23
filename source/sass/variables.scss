@@ -26,6 +26,8 @@ $desktop-width-max: 1440px;
   --grey-radio: #696969;
   --grey-border: #7c7571;
   --grey-color: #a2a2a2;
+  --grey-light: #2b2b2b;
+  --grey-guaranty: #4c4c4c;
 }
 
 $font-inter: "Inter", "Arial", sans-serif;
@@ -41,5 +43,6 @@ $border-30: 1px solid var(--white-30);
 $border-30-2: 2px solid var(--white-30);
 $border-yellow: 1.5px solid var(--yellow);
 $border-grey: 1px solid var(--grey-border);
+$border-guaranty: 1px solid var(--grey-guaranty);
 
 $shadow: 0 2.4px 12px var(--yellow-41);

@@ -88,6 +88,18 @@ const copy = (done) => {
 };
 exports.copy = copy;
 
+const copymodules = (done) => {
+  src([
+    'node_modules/swiper/swiper-bundle.min.js',
+    'node_modules/leaflet/dist/leaflet.{css,js}',
+  ], {
+    base: 'node_modules',
+  })
+    .pipe(dest('build'));
+  done();
+};
+exports.copymodules = copymodules;
+
 const clean = () => del('build');
 
 const server = (done) => {
@@ -123,6 +135,7 @@ const build = series(
     scripts,
     logo,
     svgstack,
+    copymodules,
     images,
   ),
 );
@@ -137,6 +150,7 @@ exports.default = series(
     html,
     scripts,
     logo,
+    copymodules,
     svgstack,
   ),
   series(
