@@ -71,45 +71,96 @@
 
 .header__nav-wrapper {
   display: none;
+  width: 300px;
+  position: fixed;
+  top: 10px;
+  left: calc(50% - 300px / 2);
+  padding: 50px 40px;
+  background: var(--grey-radio);
+  z-index: 20;
+
+  @media (min-width: $tablet-width) {
+    width: 750px;
+    top: 10px;
+    left: calc(50% - 750px / 2);
+  }
 
   @media (min-width: $desktop-width) {
+    position: static;
+    width: 100%;
+    padding: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     grid-column: 3 / -2;
     grid-row: 1 / 2;
+    background: none;
+    z-index: 1;
+  }
+
+  &.active {
+    display: block;
+  }
+}
+
+.header__nav-close {
+  content: "";
+  width: 20px;
+  height: 20px;
+  margin-left: auto;
+  background: url("../img/stack.svg#close-yellow") 50% 50% no-repeat;
+  background-size: cover;
+  cursor: pointer;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
   }
 }
 
 .header__nav {
-  width: 100%;
-  margin: auto 70px auto 128px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  grid-column: 3 / -2;
+  padding-left: 0;
+  list-style: none;
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    margin: auto 70px auto 128px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-column: 3 / -2;
+  }
 }
 
 .header__nav-item-link {
   display: flex;
-  margin: 20px 0;
   text-decoration: none;
+  margin: 20px 0;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 25px;
   line-height: 99.5%;
   font-family: $font-inter;
   color: var(--white);
+
+  @media (min-width: $desktop-width) {
+    font-size: 15px;
+  }
 }
 
 .header__top-button {
+  width: 210px;
   height: 49px;
   margin: auto 0;
   padding: 0 33px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: $border-30;
+  background: $gradient-button;
   border-radius: 60px;
   font-weight: 500;
   font-size: 15px;
@@ -117,7 +168,18 @@
   font-family: $font-sfuiIdisplay;
   letter-spacing: 0.08em;
   text-decoration: none;
-  color: var(--yellow);
+  color: var(--black);
+
+  &:hover,
+  &:focus {
+    background: var(--yellow-hover);
+  }
+
+  @media (min-width: $desktop-width) {
+    background: var(--black);
+    border: $border-30;
+    color: var(--yellow);
+  }
 }
 
 .header__controls {

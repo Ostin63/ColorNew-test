@@ -24,24 +24,27 @@
       </picture>
     </a>
     <div class="header__nav-wrapper">
+      <div class="header__nav-close">
+        <span class="visually-hidden">закрыть</span>
+      </div>
       <ul class="header__nav">
         <li class="header__nav-item">
-          <a href="" class="header__nav-item-link">Инвестиции</a>
+          <a href="#" class="header__nav-item-link">Инвестиции</a>
         </li>
         <li class="header__nav-item">
-          <a href="" class="header__nav-item-link">Займы</a>
+          <a href="#" class="header__nav-item-link">Займы</a>
         </li>
         <li class="header__nav-item">
-          <a href="" class="header__nav-item-link">Реферальная программа</a>
+          <a href="#" class="header__nav-item-link">Реферальная программа</a>
         </li>
         <li class="header__nav-item">
-          <a href="" class="header__nav-item-link">Блог</a>
+          <a href="#" class="header__nav-item-link">Блог</a>
         </li>
         <li class="header__nav-item">
-          <a href="" class="header__nav-item-link">о нас</a>
+          <a href="#" class="header__nav-item-link">о нас</a>
         </li>
         <li class="header__nav-item">
-          <a href="" class="header__nav-item-link">документы</a>
+          <a href="#" class="header__nav-item-link">документы</a>
         </li>
       </ul>
       <a href="#" class="header__top-button">ИНВЕСТИРОВАТЬ</a>
@@ -162,7 +165,7 @@
       <div class="options__wrapper">
         <h2 class="options__title">Варианты инвестирования</h2>
         <ul class="options__nav">
-          <li class="options__nav-item options__nav-item--active">
+          <li class="options__nav-item active">
             <button class="options__nav-button">Доверительное Управление (ДУ)</button>
           </li>
           <li class="options__nav-item">
@@ -170,22 +173,25 @@
           </li>
         </ul>
         <ul class="options__cart-wrapper">
-          <li class="options__cart options__cart--trust options__cart--active">
+          <li class="options__cart options__cart--trust active">
             <h3 class="options__cart-title">Доверительное Управление (ДУ)</h3>
-            <ul class="options__menu">
-              <li class="options__menu-item options__menu-item--active">
-                <a href="#" class="options__menu-link">Условия</a>
-              </li>
-              <li class="options__menu-item">
-                <a href="#" class="options__menu-link">Преимущества</a>
-              </li>
-              <li class="options__menu-item">
-                <a href="#" class="options__menu-link">Ограничения</a>
-              </li>
-              <li class="options__menu-item">
-                <a href="#" class="options__menu-link">Шаблон договора</a>
-              </li>
-            </ul>
+            <div class="options__menu-wrapper">
+              <ul class="options__menu">
+                <li class="options__menu-item  active">
+                  <a href="#" class="options__menu-link">Условия</a>
+                </li>
+                <li class="options__menu-item">
+                  <a href="#" class="options__menu-link">Преимущества</a>
+                </li>
+                <li class="options__menu-item">
+                  <a href="#" class="options__menu-link">Ограничения</a>
+                </li>
+                <li class="options__menu-item">
+                  <a href="#" class="options__menu-link">Шаблон договора</a>
+                </li>
+              </ul>
+              <div class="options__cart-open"></div>
+            </div>
             <p class="options__work">Как это работает?</p>
             <p class="options__text">Вы инвестируете деньги, мы вкладываем их в выгодные сделки</p>
             <div class="options__info">
@@ -293,23 +299,26 @@
           </li>
           <li class="options__cart options__cart--specific">
             <h3 class="options__cart-title">Финансирование Сделки (ФС)</h3>
-            <ul class="options__menu">
-              <li class="options__menu-item options__menu-item--active">
-                <a href="#" class="options__menu-link">Условия</a>
-              </li>
-              <li class="options__menu-item">
-                <a href="#" class="options__menu-link">Доступные лоты</a>
-              </li>
-              <li class="options__menu-item">
-                <a href="#" class="options__menu-link">Преимущества</a>
-              </li>
-              <li class="options__menu-item">
-                <a href="#" class="options__menu-link">Ограничения</a>
-              </li>
-              <li class="options__menu-item">
-                <a href="#" class="options__menu-link">Шаблон договора</a>
-              </li>
-            </ul>
+            <div class="options__menu-wrapper">
+              <ul class="options__menu">
+                <li class="options__menu-item active">
+                  <a href="#" class="options__menu-link">Условия</a>
+                </li>
+                <li class="options__menu-item">
+                  <a href="#" class="options__menu-link">Доступные лоты</a>
+                </li>
+                <li class="options__menu-item">
+                  <a href="#" class="options__menu-link">Преимущества</a>
+                </li>
+                <li class="options__menu-item">
+                  <a href="#" class="options__menu-link">Ограничения</a>
+                </li>
+                <li class="options__menu-item">
+                  <a href="#" class="options__menu-link">Шаблон договора</a>
+                </li>
+              </ul>
+              <div class="options__cart-open"></div>
+            </div>
             <p class="options__work">Как это работает?</p>
             <p class="options__text">Вид финансирования, при котором один инвестор покрывает всю сумму сделки и
               становится
@@ -349,7 +358,8 @@
             <legend class="calculator__legend">Сумма сбережений</legend>
             <label class="calculator__label"></label>
             <div class="calculator__wrapper-input-slider">
-              <input class="calculator__input calculator__input--slider" value="2 050 000 ₽">
+              <input class="calculator__input calculator__input--slider" value="2 050 000">
+              <p>₽</p>
             </div>
             <div class="calculator__slider" id="slider"></div>
             <div class="calculator__sum-wrapper">
@@ -395,19 +405,28 @@
               <li class="calculator__item-reckoning calculator__item-reckoning--top">
                 <label class="calculator__label calculator__label--pay" for="monthlyСharge">Ежемесячное
                   начисление</label>
-                <input class="calculator__input calculator__input--pay-top" type="text" id="monthlyСharge"
-                  value="22 208 ₽">
+                <div class="calculator__input-wrapper calculator__input-wrapper--pay-top">
+                  <input class="calculator__input calculator__input--pay-top" type="text" id="monthlyСharge"
+                    value="22 208">
+                  <p>₽</p>
+                </div>
               </li>
               <li class="calculator__item-reckoning calculator__item-reckoning--bottom">
                 <div class="calculator__wrapper-pay">
                   <label class="calculator__label calculator__label--pay" for="income">Доход</label>
-                  <input class="calculator__input calculator__input--pay" type="text" id="income" value="13%">
+                  <div class="calculator__input-wrapper calculator__input-wrapper--pay">
+                    <input class="calculator__input calculator__input--pay" type="text" id="income" value="13">
+                    <p>%</p>
+                  </div>
                 </div>
                 <div class="calculator__wrapper-pay">
                   <label class="calculator__label calculator__label--pay" for="annualCharge">Ежегодное
                     начисление</label>
-                  <input class="calculator__input calculator__input--pay" type="text" id="annualCharge"
-                    value="316 500 ₽">
+                  <div class="calculator__input-wrapper calculator__input-wrapper--pay-right">
+                    <input class="calculator__input calculator__input--pay-right" type="text" id="annualCharge"
+                      value="316 500">
+                    <p>₽</p>
+                  </div>
                 </div>
               </li>
             </ul>
@@ -460,7 +479,8 @@
         <div class="reviews__slider-wrapper swiper-wrapper">
           <div class="reviews__slide swiper-slide">
             <div class="reviews__slide-mask">
-              <video class="reviews__video" src="video/video-1.mp4" controls poster="img/video-poster-reviews-1.jpg"></video>
+              <video class="reviews__video" src="video/video-1.mp4" controls
+                poster="img/video-poster-reviews-1.jpg"></video>
               <div class="reviews__wrapper-video-text">
                 <p class="reviews__video-text">5 минут</p>
               </div>
@@ -478,7 +498,8 @@
           </div>
           <div class="reviews__slide swiper-slide">
             <div class="reviews__slide-mask">
-              <video class="reviews__video" src="video/video-3.mp4" controls poster="img/video-poster-reviews-3.jpg"></video>
+              <video class="reviews__video" src="video/video-3.mp4" controls
+                poster="img/video-poster-reviews-3.jpg"></video>
               <div class="reviews__wrapper-video-text">
                 <p class="reviews__video-text">1 час 55 минут</p>
               </div>

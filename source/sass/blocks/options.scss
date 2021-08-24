@@ -57,6 +57,7 @@
   font-family: $font-sfuiIdisplay;
   color: var(--white-50);
   grid-column: 2 / -2;
+  cursor: pointer;
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / -1;
@@ -71,13 +72,9 @@
   border-radius: 20px 20px 0 0;
   overflow: hidden;
 
-  &--active .options__nav-button {
+  &.active .options__nav-button {
     background: var(--grey);
     color: var(--white);
-  }
-
-  &--active {
-    background: var(--grey);
   }
 }
 
@@ -105,7 +102,7 @@
   text-decoration: none;
   border-radius: 20px;
 
-  &--active {
+  &.active {
     display: flex;
     background: var(--grey);
   }
@@ -138,35 +135,16 @@
   }
 }
 
-.options__menu {
+.options__menu-wrapper {
   width: 100%;
   height: 38px;
-  margin: 0;
-  padding: 6px 22px 0 19px;
+  padding: 0 22px 0 19px;
   list-style: none;
   display: flex;
   justify-content: space-between;
   border: $border-yellow;
   border-radius: 41px;
   background: var(--black);
-
-  &::after {
-    content: "";
-    width: 11px;
-    height: 11px;
-    display: block;
-    margin-top: 6px;
-    background: url("../img/stack.svg#arrow") 50% 50% no-repeat;
-    background-size: cover;
-
-    &.active {
-      transform: rotate(180deg);
-    }
-
-    @media (min-width: $desktop-width) {
-      display: none;
-    }
-  }
 
   @media (min-width: $desktop-width) {
     width: 545px;
@@ -177,13 +155,55 @@
   }
 }
 
+.options__menu {
+  position: relative;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .options__menu-item {
   display: none;
+  height: 38px;
+  padding: 10px;
+  text-align: center;
+  border: $border-30-2;
+  background: var(--black);
+  z-index: 10;
 
-  &--active {
+  .options__menu-link {
+    color: var(--white);
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 52px;
+    padding: 0;
     display: block;
+    border: none;
+    background: none;
+  }
+
+  &.active {
+    position: relative;
+    height: 35px;
+    padding: 0;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    border: none;
+
+    .options__menu-link {
+      color: var(--yellow);
+    }
 
     @media (min-width: $desktop-width) {
+      height: 52px;
       padding: 0 15px;
       margin-left: -15px;
       margin-right: -15px;
@@ -191,26 +211,43 @@
       border: $border-yellow;
     }
   }
+}
 
-  @media (min-width: $desktop-width) {
-    display: block;
-  }
+.options__menu.show .options__menu-item {
+  display: flex;
 }
 
 .options__menu-link {
-  margin: auto 0;
   text-decoration: none;
   font-weight: normal;
   font-size: 13px;
   line-height: 95%;
   font-family: $font-sfuiIdisplay;
-  color: var(--yellow);
 
   @media (min-width: $desktop-width) {
     height: 52px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+}
+
+.options__cart-open {
+  width: 20px;
+  height: 20px;
+  margin: auto 0;
+  display: flex;
+  justify-content: center;
+  background: url("../img/stack.svg#arrow") 50% 50% no-repeat;
+  background-size: 11px;
+  cursor: pointer;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+
+  &.active {
+    transform: rotate(180deg);
   }
 }
 
@@ -224,6 +261,8 @@
 }
 
 .options__text {
+  max-width: 365px;
+  margin-bottom: auto;
   padding: 0 0 20px;
   font-weight: normal;
   font-size: 13px;
