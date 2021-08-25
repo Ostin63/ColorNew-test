@@ -177,16 +177,16 @@
             <h3 class="options__cart-title">Доверительное Управление (ДУ)</h3>
             <div class="options__menu-wrapper">
               <ul class="options__menu">
-                <li class="options__menu-item  active">
+                <li class="options__menu-item options__menu-item--trust  active">
                   <a href="#" class="options__menu-link">Условия</a>
                 </li>
-                <li class="options__menu-item">
+                <li class="options__menu-item options__menu-item--trust">
                   <a href="#" class="options__menu-link">Преимущества</a>
                 </li>
-                <li class="options__menu-item">
+                <li class="options__menu-item options__menu-item--trust">
                   <a href="#" class="options__menu-link">Ограничения</a>
                 </li>
-                <li class="options__menu-item">
+                <li class="options__menu-item options__menu-item--trust">
                   <a href="#" class="options__menu-link">Шаблон договора</a>
                 </li>
               </ul>
@@ -301,19 +301,19 @@
             <h3 class="options__cart-title">Финансирование Сделки (ФС)</h3>
             <div class="options__menu-wrapper">
               <ul class="options__menu">
-                <li class="options__menu-item active">
+                <li class="options__menu-item options__menu-item--specific active">
                   <a href="#" class="options__menu-link">Условия</a>
                 </li>
-                <li class="options__menu-item">
+                <li class="options__menu-item options__menu-item--specific">
                   <a href="#" class="options__menu-link">Доступные лоты</a>
                 </li>
-                <li class="options__menu-item">
+                <li class="options__menu-item options__menu-item--specific">
                   <a href="#" class="options__menu-link">Преимущества</a>
                 </li>
-                <li class="options__menu-item">
+                <li class="options__menu-item options__menu-item--specific">
                   <a href="#" class="options__menu-link">Ограничения</a>
                 </li>
-                <li class="options__menu-item">
+                <li class="options__menu-item options__menu-item--specific">
                   <a href="#" class="options__menu-link">Шаблон договора</a>
                 </li>
               </ul>
@@ -612,14 +612,14 @@
         </li>
       </ul>
     </div>
-    <form class="footer__form" action="#" method="post">
+    <form class="footer__form" action="https://echo.htmlacademy.ru/" method="post">
       <div class="footer__form-wrapper-input">
         <label for="name"></label>
-        <input class="footer__form-input" type="text" name="name" id="name" placeholder="Ваше имя" required>
+        <input class="footer__form-input footer__form-input--name" type="text" name="name" id="name" placeholder="Ваше имя" required>
       </div>
       <div class="footer__form-wrapper-input">
         <label for="phone"></label>
-        <input class="footer__form-input" type="tel" name="phone" id="phone" placeholder="Ваш номер телефона" required>
+        <input class="footer__form-input footer__form-input--tel" type="tel" name="phone" id="phone" placeholder="Ваш номер телефона" required>
       </div>
       <button class="footer__form-button" type="submit">оставить заявку</button>
     </form>
@@ -627,6 +627,18 @@
       трафика и настройки подходящей
       рекламы. Оставаясь на сайте, вы соглашаетесь на сбор таких данных.</p>
   </footer>
+
+  <template id="success">
+    <div class="success">
+      <p class="success__message">Форма успешно отправлена,<br>спасибо! :)</p>
+    </div>
+  </template>
+
+  <template id="error-loading">
+    <div class="error-loading">
+      <p class="error-loading__message">Форма не отправлена,<br>попробуйте позже! :)</p>
+    </div>
+  </template>
 
   <script src="https://unpkg.com/nouislider@14.6.3/distribute/nouislider.min.js"></script>
   <script src="swiper/swiper-bundle.min.js"></script>

@@ -84,6 +84,11 @@
     width: 39px;
     height: 39px;
   }
+
+  &:hover,
+  &:focus {
+    background: var(--grey-table);
+  }
 }
 
 .footer__social-svg {
