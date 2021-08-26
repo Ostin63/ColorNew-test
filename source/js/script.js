@@ -90,11 +90,11 @@ const onToggleMenuItem = (MenuItems, arrows, menus) => {
   for (let i = 0; i < MenuItems.length; i++) {
     MenuItems[i].addEventListener('click', (evt) => {
       evt.preventDefault();
-      for (let i = 0; i < MenuItems.length; i++){
+      for (let i = 0; i < MenuItems.length; i++) {
         MenuItems[i].classList.remove('active');
       }
       MenuItems[i].classList.add('active');
-      for (let i = 0; i < arrows.length; i++){
+      for (let i = 0; i < arrows.length; i++) {
         arrows[i].classList.remove('active');
         menus[i].classList.remove('show');
       }
@@ -119,7 +119,7 @@ onToggleMenuItem(optionsTrustMenuItems, optionsMenuArrows, optionsMenus);
 onToggleMenuItem(optionsSpecificMenuItems, optionsMenuArrows, optionsMenus);
 // Калькулятор
 
-valueElementRange.value = `${2050000  }₽`;
+valueElementRange.value = `${2050000}₽`;
 
 noUiSlider.create(sliderElement, {
   range: {
@@ -153,7 +153,6 @@ sliderElement.noUiSlider.on('update', (_, handle, unencoded) => {
     valueYearlyPay.value = `${valueRange * 18 / 100}₽`;
   }
 });
-
 
 // Инициализация слайдера
 
